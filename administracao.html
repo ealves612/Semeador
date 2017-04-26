@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <!--Importando a fonte de icones do Google-->
+        <link rel="stylesheet" href="css/google-fonts.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Importando o materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+        <!-- CSS do index -->
+        <link href="css/principal.css" rel="stylesheet">
+        <!--Fazendo com que o browser saiba que o código é otimizado para mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+	       <div class="row">
+                <nav class="green col s12">
+                    <div class="nav-wrapper padding-esquerda">
+                        <a href="#" class="brand-logo">Agroexpress - Semeador 1.0</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+		      <div class="col-md-12 topBar">    
+			<div class="row ">
+                <div class="col m1"></div>
+				<div class="col s12 m7 padding-tabela-grande">
+					<table class="responsive-table highlight centered tabelaVendedores">
+						<thead>
+							<tr>
+								<th class="truncate">
+									Vendedor
+								</th>
+								<th>
+									CPF
+								</th>
+                                <th>
+									Email
+								</th>
+                                <th class="truncate">
+									Qtd. de Pontos
+								</th>
+								<th>
+									Editar
+								</th>
+                                <th class="truncate">
+									Remover
+								</th>
+							</tr>
+						</thead>
+					</table>
+                    <a class="btn waves-effect waves-light blue block right" href="#modal1"><i class="material-icons">add</i></a>
+                    <!-- MODAL AQUI -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Adicionar Vendedor</h4>
+                            <br>
+                            <div class="row input-field">
+                                <input type="date" class="datepicker">
+                                <label for="data">Data</label>
+                            </div>
+                            <div class="row input-field col s8">
+                                <input id="nome-completo" type="text" class="nome-completo">
+                                <label for="nome-completo">Nome Completo</label>
+                            </div>
+                            <div class="row input-field col s4">
+                                <input type="text" name="cpf">
+                                <label>CPF</label>
+                            </div>
+                            <div class="row input-field col s12">
+                                <input type="text" name="email">
+                                <label>Email</label>
+                            </div>
+                        </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Adicionar Vendedor</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                    </div>
+                </div>
+				</div>
+				    <div class="col m3">
+                        <div class="card green darken-1">
+                            <div class="card-content white-text">
+                                <p>A posição de sua revenda no raking, na semana:</p>
+                                <span class="card-title"><b>1°</b> Lugar.</span>
+                            </div>
+                        </div>
+                        <div class="card green darken-1">
+                            <div class="card-content white-text">
+                                <p>Sua pontuação, na semana:</p>
+                                <span class="card-title"><b>2548</b> pontos.</span>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>  
+</div>        
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/pedido.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+°</html>
