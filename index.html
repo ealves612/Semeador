@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Importando a fonte de icones do Google-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Importando o materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <!-- CSS do index -->
+        <link href="css/principal.css" rel="stylesheet">
+        <!--Fazendo com que o browser saiba que o código é otimizado para mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        <div class="container-fluid">
+	       <div class="row">
+			     <nav class="green col s12">
+                    <div class="nav-wrapper padding-esquerda">
+                        <a href="#" class="brand-logo">Agroexpress - Semeador 1.0</a>
+                    </div>
+                </nav>
+	       </div>
+	       <div class="row login">
+		      <div class="col s2 m4">
+		      </div>
+		      <div class="col s8 m4">
+                <div class="center-align block">
+                      <i class="material-icons prefix icone-verde large">account_circle</i>
+                </div>  
+                    <form id="login-form">
+                            <div class="input-field">
+                                <input id="icon_prefix" type="text" class="campo-login">
+                                <label for="icon_prefix">CPF ou CNPJ</label>
+                            </div>
+                    </form>
+                  <form>
+                        <div class="input-field">
+                                <input id="icon_prefix" type="password" class="campo-senha" disabled>
+                                <label for="icon_prefix">Senha</label>
+                        </div>
+                  </form>
+                    <div class="center block">
+                        <a class="waves-effect waves-light btn green botao-login" id="botao-proximo" href="#">Entrar</a>
+                    </div>
+		      </div>
+              <div class="col s2 m4">
+		      </div>
+	       </div>
+        </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/login.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>

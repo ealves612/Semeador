@@ -1,0 +1,50 @@
+nav ul li a{
+    color: green;
+}
+.barra-topo{
+    padding-top: 15px;
+}
+
+.padding-tabela-grande{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.padding-tabela-pequena{
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.padding-esquerda{
+    padding-left: 20px;
+}
+
+.login{
+    padding-top: 180px
+}
+
+.login-aviso{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.icone-verde{
+    color: green;
+}
+
+.icone-azul{
+    color: darkslategray;
+}
+
+.icone-vermelho{
+    color: darkred;
+}
+
+.picker__box{
+    background-color: greenyellow;
+}
+
+.picker__date-display, .picker__weekday-display{
+    background-color: green;
+}
