@@ -2,7 +2,17 @@ $(function(){
   carregaJsonUsuarios();
 });
 
+
+
 function carregaJsonUsuarios(){
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:8080/login", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+    userID: 08819958430,
+        password: 123456
+    }));
+    
     $.get("http://localhost:3000/usuarios", function(data){
         $(data).each(function(){
             var username = this.cpf_cnpj;
